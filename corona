@@ -1,1 +1,0 @@
-curl https://corona-stats.online/ > corona && grep -e GB -e Deaths corona && rm corona
