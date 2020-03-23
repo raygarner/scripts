@@ -1,0 +1,4 @@
+#!/bin/sh
+perl-rename 's/ /_/g' *
+perl-rename 's/\(|\)//g' *
+perl-rename 's/\&//g' *
