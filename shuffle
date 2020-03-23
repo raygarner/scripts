@@ -1,0 +1,2 @@
+#!/bin/sh
+mpv --playlist="$1" --shuffle --no-video
