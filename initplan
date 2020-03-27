@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "*" > .plan
+echo "" >> .plan
+echo "+" >> .plan
+
