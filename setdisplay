@@ -1,6 +1,0 @@
-#!/bin/sh
-
-mons -s
-xrandr --output HDMI1 --primary --mode 2560x1440
-compton --no-fading-openclose &
-setwp

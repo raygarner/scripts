@@ -1,2 +1,2 @@
 #!/bin/sh
-mpv --playlist=$1
+mpv --playlist="$1"

@@ -4,11 +4,11 @@ FILE=$1
 QUEUE="q"
 
 #get printer uri
-URI=`lpinfo -v | grep socket:// | awk '{print $2}'`
+URI=$(lpinfo -v | grep socket:// | awk '{print $2}')
 echo "$URI"
 
 #make queue
-lpadmin -p $QUEUE -E -v $URI
+lpadmin -p $QUEUE -E -v "$URI"
 
 #make this queue the default
 lpadmin -d $QUEUE
@@ -20,5 +20,5 @@ cupsenable $QUEUE
 cupsaccept $QUEUE
 
 #print the file
-lpr $FILE
+lpr "$FILE"
 

@@ -1,5 +1,5 @@
 #!/bin/sh
 for file in *; do
-    echo $file
-    unrar x $file
+    echo "$file"
+    unrar x "$file"
 done

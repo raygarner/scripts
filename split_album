@@ -8,13 +8,13 @@ COUNT=1
 
 while true; do
 	echo "Track name: "
-	read NAME
+	read -r NAME
 	echo "Track start: "
-	read START
+	read -r START
 	echo "Track end: "
-	read END
+	read -r END
 
-	ffmpeg -i $1 -acodec copy -ss $START -to $END "$COUNT-$NAME"
+	ffmpeg -i "$1" -acodec copy -ss "$START" -to "$END" "$COUNT-$NAME"
 	COUNT=$((COUNT + 1))
 
 
