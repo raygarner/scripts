@@ -1,0 +1,4 @@
+#!/bin/sh
+transmission-cli -w . "$1"
+namefix
+ls
