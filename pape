@@ -1,0 +1,3 @@
+#!/bin/sh
+xwallpaper --zoom "/home/ray/media/pics/papes/$(ls /home/ray/media/pics/papes/ | shuf -n 1)"
+
