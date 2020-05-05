@@ -3,3 +3,4 @@ cp /home/ray/scripts/Makefile_tex Makefile
 mkdir src
 mkdir img
 touch article.tex
+touch src/empty
