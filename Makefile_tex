@@ -1,0 +1,14 @@
+DOC=article.tex
+
+all: build clean
+
+build: wc
+	pdflatex $(DOC)
+	pdflatex $(DOC)
+
+clean:
+	rm *.log *.aux *.toc
+
+wc:
+	texcount -brief $(DOC) > wc.txt
+	wc -w src/* >> wc.txt

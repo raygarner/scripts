@@ -1,0 +1,5 @@
+#!/bin/sh
+cp /home/ray/scripts/Makefile_tex Makefile
+mkdir src
+mkdir img
+touch article.tex
