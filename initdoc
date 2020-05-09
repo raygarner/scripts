@@ -4,4 +4,4 @@ cp /home/ray/Documents/latex/article.tex .
 mkdir src
 mkdir img
 touch src/empty
-ls
+ls --color=auto
