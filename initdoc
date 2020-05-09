@@ -1,6 +1,6 @@
 #!/bin/sh
-cp /home/ray/scripts/Makefile_tex Makefile
+cp /home/ray/Documents/Makefile .
+cp /home/ray/Documents/latex/article.tex .
 mkdir src
 mkdir img
-touch article.tex
 touch src/empty
