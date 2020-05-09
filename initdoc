@@ -4,4 +4,6 @@ cp /home/ray/Documents/latex/article.tex .
 mkdir src
 mkdir img
 touch src/empty
+echo "TODO" > todo
+echo "- " >> todo
 ls --color=auto
