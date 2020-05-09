@@ -1,5 +1,5 @@
 #!/bin/sh
-cp /home/ray/Documents/Makefile .
+cp /home/ray/Documents/latex/Makefile .
 cp /home/ray/Documents/latex/article.tex .
 mkdir src
 mkdir img
