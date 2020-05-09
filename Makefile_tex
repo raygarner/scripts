@@ -1,13 +1,16 @@
 DOC=article.tex
+NAME=article
 
 all: build clean
 
 build: wc
 	pdflatex $(DOC)
+	bibier $(NAME)
 	pdflatex $(DOC)
 
 clean:
-	rm -f *.log *.aux *.toc
+	rm -f *.log *.aux *.toc *.bcf *.blg *.bbl *.xml
+
 
 wc:
 	texcount $(DOC) > wc.txt
