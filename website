@@ -1,5 +1,5 @@
 #!/bin/sh
 SERVER="ftp.perfectcast.com"
 #USER="raygarner@perfectcast.com"
-pass -c ftp.perfectcast.com
+#pass -c ftp.perfectcast.com
 ftp "$SERVER"
