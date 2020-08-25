@@ -1,24 +1,26 @@
 #!/bin/sh
 
 FILE=$1
-#QUEUE="qname"
+QUEUE="qname"
 
 #get printer uri
-URI=$(lpinfo -v | grep socket:// | awk '{print $2}' | sed 's/socket:\/\///g')
+#URI=$(lpinfo -v | grep socket:// | awk '{print $2}' | sed 's/socket:\/\///g')
+URI=$(lpinfo -v | grep socket:// | awk '{print $2}')
 echo "$URI"
 
 #make queue
-#lpadmin -p $QUEUE -E -v "$URI"
+#lpadmin -p $QUEUE -E -v "socket://$URI"
+lpadmin -p $QUEUE -E -v "$URI"
 
 #make this queue the default
-#lpadmin -d $QUEUE
+lpoptions -d $QUEUE
 
 #enable the queue
-#cupsenable $QUEUE
+cupsenable $QUEUE
 
 #make the queue accept print requests
-#cupsaccept $QUEUE
+cupsaccept $QUEUE
 
 #print the file
-lpr "$FILE" -H "$URI"
-
+#lpr "$FILE" -H "$URI"
+lpr "$FILE"
