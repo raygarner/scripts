@@ -1,3 +1,6 @@
 #!/bin/sh
 st -e vis &
 mpv --playlist="$1" --no-video
+TERMID=$(ps aux | grep st | grep vis | awk '{print $2}')
+VISID=$(pgrep vis)
+kill "$TERMID"
