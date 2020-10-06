@@ -2,7 +2,7 @@
 ls -1a "$1"
 cd "$1" && length && cd ..
 st -e vis &
-mpv --playlist="$1" --no-video
+mpv --playlist="$1" --no-video --save-position-on-quit
 TERMID=$(ps aux | grep st | grep vis | awk '{print $2}')
 VISID=$(pgrep vis)
 kill "$TERMID"

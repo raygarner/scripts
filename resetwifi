@@ -1,0 +1,4 @@
+sudo ip link set dev wlp2s0 down
+sudo ip link set dev wlp2s0 up
+sudo wifi-menu
+sudo dhcpcd
