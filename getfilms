@@ -1,0 +1,4 @@
+#!/bin/sh
+#run as sudo
+mv /var/lib/transmission/Downloads/* /home/ray/media/vids/films/ || exit
+
