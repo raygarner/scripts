@@ -1,0 +1,1 @@
+curl "https://archlinux.org/mirrorlist/?country=GB&protocol=http&protocol=https&ip_version=4" | sed 's/#Server/Server/g' | sudo tee /etc/pacman.d/mirrorlist
