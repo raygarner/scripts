@@ -1,3 +1,5 @@
+#!/bin/sh
+#use '.PSPIC -C image.eps' to add pictures to document
 cp ~/Documents/roff/Makefile .
 cp ~/Documents/roff/doc.ms .
 ls
