@@ -3,4 +3,4 @@ cp ~/Documents/roff/Makefile .
 touch doc.ms
 mkdir img
 mkdir src
-ls
+ls --color=always
